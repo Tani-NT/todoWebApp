@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import './App.css'
 import AddTodo from './components/AddTodo/AddTodo.jsx';
 import TodoList from './components/TodoList/TodoList.jsx';
-import { addTodo,deleteTodo,editTodo,todoFinished } from './actions/todoAction.js';
+import todoReducers, {addTodo,editTodo,deleteTodo,todoFinished} from './slices/todoSlice.js';;
 import { bindActionCreators } from 'redux';
 
 function App() {
